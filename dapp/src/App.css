@@ -1,0 +1,707 @@
+.App {
+  text-align: center;
+  /* background-image: url("roulette.png"); */
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 80px;
+  margin-left: 10px;
+}
+
+.App-header {
+  background-color: rgb(0, 0, 0);
+  height: fit-content;
+  padding: 20px;
+  font-family: fantasy;
+  color: goldenrod;
+  font-style: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+.youtubevideowrap {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Game-section {
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 20px;
+  font-family: fantasy;
+  font-style: bold;
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 20px; */
+  margin-bottom: 40px;
+}
+
+.App-info {
+  border-radius: 25px;
+  background-color: rgba(174, 194, 59, 0.712);
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: fantasy;
+  font-style: bold;
+  float: center;
+}
+
+.Reward-matrix {
+  border-radius: 25px;
+  background-color: white;
+  width: fit-content;
+  font-family: fantasy;
+  font-style: bold;
+  color: black;
+  font-size: 13px;
+  clear: right;
+}
+
+.Reward-matrix-list {
+  background-color: transparent;
+  width: fit-content;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  font-family: fantasy;
+  font-size: 15px;
+  font-style: bold;
+  text-align: left;
+}
+
+.About {
+  background-color: black;
+}
+
+.App-about {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 25px;
+  background-color: white;
+  color: #4d648d;
+  /* color: rgba(13, 109, 153, 0.863); */
+  height: fit-content;
+  font-family: fantasy;
+  font-style: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.App-fair {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  height: fit-content;
+  font-family: fantasy;
+  font-style: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.App-table {
+  background-color: rgb(20, 18, 18);
+  height: fit-content;
+  width: fit-content;
+  font-family: fantasy;
+  font-style: bold;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: gold;
+  float: center;
+  text-align: center;
+}
+
+.Center {
+  align-items: center;
+}
+
+.App-list {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.App-title {
+  color: rgba(0, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: fantasy;
+}
+
+.App-title-metamask {
+  color: goldenrod;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: fantasy;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-new {
+  outline-width: 0;
+  display: inline-block;
+  padding: 20px 52px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.button-admin {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-admin-enabled {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: gold;
+  border: none;
+  color: chocolate;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-admin-enabled:active {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: goldenrod;
+  border: none;
+  color: chocolate;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-fb-share-enabled {
+  outline-width: 0;
+  border-radius: 5px;
+  background-color: gold;
+  border: none;
+  color: black;
+  padding-top: 4px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.button-fb-share-enabled:active {
+  outline-width: 0;
+  border-radius: 5px;
+  background-color: goldenrod;
+  border: none;
+  color: black;
+  padding-top: 4px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.button-donation-enabled {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: gold;
+  border: none;
+  color: chocolate;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-donation-enabled:active {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: rgb(180, 155, 10);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-subscribe-enabled {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: gold;
+  border: none;
+  color: chocolate;
+  padding: 12px 12px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button-subscribe-enabled:active {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: rgb(180, 155, 10);
+  border: none;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button-player {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button-player-enabled {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: gold;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-player-enabled:active {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: goldenrod;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-more-games {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-more-games-enabled {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: rgba(255, 0, 0, 0.712);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-more-games-enabled:active {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: rgba(201, 38, 16, 0.74);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-new-games {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: black;
+  border: none;
+  color: goldenrod;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button-new-games:active {
+  outline-width: 0;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.438);
+  border: none;
+  color: gold;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.Admin {
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: rgba(221, 18, 18, 0.856);
+  border: 20px;
+  color: white;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.Donate {
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 10px;
+  color: goldenrod;
+  padding: 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.NewGame {
+  width: fit-content;
+  /* margin-left: auto;
+  margin-right: auto; */
+  border-radius: 25px;
+  /* background-color: rgba(42, 221, 18, 0.596); */
+  background-color: gold;
+  border: 20px;
+  color: rgba(13, 109, 153, 0.863);
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: fantasy;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.Inline {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Footer {
+  background-color: rgba(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.AllGamesCard {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  /* display: inline-block; */
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  border-radius: 25px;
+  /* background-color: rgba(167, 221, 18, 0.596); */
+  background-color: black;
+  border: 10px;
+  /* color: rgba(13, 109, 153, 0.863); */
+  color: goldenrod;
+  padding: 10px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: fantasy;
+  position: sticky;
+  top: 30px;
+  float: center;
+}
+.fb-like-share {
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+.fb_iframe_widget iframe {
+  border-radius: 15px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AllGames {
+  /* margin-top: 20px; */
+  margin-bottom: 10px;
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 10px;
+  color: rgba(13, 109, 153, 0.863);
+  padding: 30px 50px;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.Player {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: white;
+  border: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+  font-family: fantasy;
+}
+
+.StickyRight {
+  position: sticky;
+  top: 0;
+  float: right;
+  height: fit-content;
+  margin-right: 25px;
+}
+
+.StickyLeft {
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  float: left;
+  margin-left: 25px;
+}
+
+.FitContent {
+  height: fit-content;
+  min-height: 400px;
+}
+
+.GameState {
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: rgba(18, 82, 221, 0.856);
+  border: 10px;
+  margin-top: 10px;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.PlayerInput {
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: rgba(160, 221, 18, 0.856);
+  border: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.game-input {
+  outline-width: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 30px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: solid 1px #b3b3b3;
+  border-radius: 25px;
+  box-shadow: inset 0px 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.game-input-subscribe {
+  outline-width: 0;
+  /* margin-top: 15px;
+  margin-bottom: 15px; */
+  width: 30px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: solid 1px #b3b3b3;
+  border-radius: 25px;
+  box-shadow: inset 0px 1px 0 0 rgba(0, 0, 0, 0.1);
+  color: grey;
+}
+
+.input {
+  border-radius: 18px;
+  background: rgb(0, 153, 107);
+  padding: 20px;
+  width: 250px;
+  height: 15px;
+  text-align: center;
+  font-size: 22px;
+  color: gold;
+}
+
+.social-links-top {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+
+  border-radius: 25px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-links {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: gold;
+  opacity: 1; /* Firefox */
+}
+
+.bottomMargin {
+  margin-bottom: 10px;
+}
+table {
+  border-collapse: separate;
+  border: solid black;
+  border-radius: 25px;
+  padding: 15px 15px;
+}
+
+.fab {
+  color: goldenrod !important;
+  margin-right: 7px;
+  margin-left: 5px;
+}
+
+.fas {
+  color: goldenrod !important;
+  margin-right: 7px;
+  margin-left: 10px;
+}
+
+td,
+th {
+  /* border-left: solid black 1px; */
+  border: solid goldenrod 1px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+a {
+  color: gold;
+}

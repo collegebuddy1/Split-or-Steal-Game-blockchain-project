@@ -1,0 +1,28 @@
+{
+  "name": "dapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@quentin-sommer/react-useragent": "^1.3.0",
+    "firebase": "^5.0.4",
+    "gh-pages": "^1.1.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-facebook": "^5.0.3",
+    "react-ga": "^2.5.2",
+    "react-input-autosize": "^2.2.1",
+    "react-scripts": "1.1.4",
+    "react-tabs": "^2.2.2",
+    "web3": "^1.0.0-beta.34",
+    "websocket": "^1.0.25"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "https://showmeyourcode.github.io/Split-or-Steal-Game/"
+}
